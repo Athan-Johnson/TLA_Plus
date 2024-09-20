@@ -939,28 +939,38 @@
 \begin{document}
 \tlatex
 \setboolean{shading}{true}
-\fl{}\moduleLeftDash\cl{ {\MODULE} Untitled}\moduleRightDash\cl{}
-\fl{}
-\fl{ {\EXTENDS} Integers}
-\fl{ {\VARIABLES} i ,\, pc}
-\fl{}
- \fl{ Init}\al{5}{1}{ \.{\defeq}}\al{5}{2}{ ( pc \.{=}\@w{start} ) \.{\land} (
- i \.{=} 0 )}
-\fl{}
- \fl{ Pick}\al{7}{1}{ \.{\defeq}}\al{7}{2}{ \.{\land}}\al{7}{3}{ pc}\al{7}{4}{
- \.{=}\@w{start}}
-\fl{ \.{\land}}\al{8}{1}{ i \.{'}}\al{8}{3}{ \.{\in} 0 \.{\dotdot} 1000}
-\fl{ \.{\land}}\al{9}{1}{ pc \.{'} \.{=}\@w{middle}}
-\fl{}
- \fl{ Add1}\al{11}{1}{ \.{\defeq}}\al{11}{2}{ \.{\land}}\al{11}{3}{
- pc}\al{11}{4}{ \.{=}}\al{11}{5}{\@w{middle}}
-\fl{ \.{\land}}\al{12}{1}{ i \.{'}}\al{12}{3}{ \.{=}}\al{12}{4}{ i \.{+} 1}
-\fl{ \.{\land}}\al{13}{1}{ pc \.{'} \.{=}\@w{done}}
-\fl{}
-\fl{ Next}\al{15}{1}{ \.{\defeq} Pick \.{\lor} Add1}
-\fl{}
-\fl{}\bottombar\cl{}
-\fl{}
-\fl{}
-\fl{}
+\@x{}\moduleLeftDash\@xx{ {\MODULE} SimpleProgram}\moduleRightDash\@xx{}%
+\@pvspace{8.0pt}%
+\@x{ {\EXTENDS} Integers}%
+\@x{ {\VARIABLES} i ,\, pc}%
+\@pvspace{8.0pt}%
+\@x{ Init\@s{6.36} \.{\defeq} ( pc \.{=}\@w{start} ) \.{\land} ( i \.{=} 0 )}%
+\@pvspace{8.0pt}%
+\@x{ Pick\@s{3.05} \.{\defeq} \.{\land} pc \.{=}\@w{start}}%
+\@x{\@s{42.06} \.{\land} i \.{'}\@s{2.87} \.{\in} 0 \.{\dotdot} 1000}%
+\@x{\@s{42.06} \.{\land} pc \.{'} \.{=}\@w{middle}}%
+\@pvspace{8.0pt}%
+\@x{ Add1 \.{\defeq} \.{\land} pc \.{=}\@w{middle}}%
+\@x{\@s{42.06} \.{\land} i \.{'}\@s{2.87} \.{=} i \.{+} 1}%
+\@x{\@s{42.06} \.{\land} pc \.{'} \.{=}\@w{done}}%
+\@pvspace{8.0pt}%
+\@x{ Next\@s{2.23} \.{\defeq} Pick \.{\lor} Add1}%
+\@pvspace{16.0pt}%
+\@x{}\bottombar\@xx{}%
+\setboolean{shading}{false}
+\begin{lcom}{0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+\ensuremath{\.{\,\backslash\,}}* Modification History
+\end{cpar}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ \ensuremath{\.{\,\backslash\,}}* Last modified Sat \ensuremath{Sep} 14
+ 18:01:15 \ensuremath{EDT} 2024 by \ensuremath{athan
+}%
+\end{cpar}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ \ensuremath{\.{\,\backslash\,}}* Created Sat \ensuremath{Sep} 14 18:00:34
+ \ensuremath{EDT} 2024 by \ensuremath{athan
+}%
+\end{cpar}%
+\end{lcom}%
 \end{document}
